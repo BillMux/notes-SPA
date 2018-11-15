@@ -2,9 +2,10 @@
   function NoteList() {
     this.entries = [];
   };
+
+  NoteList.prototype.addNote = function(text) {
+    this.entries.push(text);
+  };
+
   exports.NoteList = NoteList;
 })(this);
-
-NoteList.prototype.addNote = function(note) {
-  this.entries.push(note);
-};

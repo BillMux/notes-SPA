@@ -1,7 +1,4 @@
-// note = new Note('test');
-// noteList = new NoteList;
-// noteList.addNote(note);
-// noteListView = new NoteListView(noteList.entries);
-// console.log(noteListView.returnList());
-
-document.getElementById('app').innerHTML = 'Howdy'
+var list = new NoteList
+var noteList = new NoteListView(list.entries);
+document.getElementById('app').innerHTML = 'Howdy';
+document.getElementById('notes').innerHTML = noteList.returnList();

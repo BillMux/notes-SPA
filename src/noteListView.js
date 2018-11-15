@@ -8,8 +8,7 @@
     for(var i = 0; i < this.noteList.length; i++) {
       htmlString += `<li>${this.noteList[i]}</li>`;
     };
-    htmlString += '</ul>'
-    return htmlString
+    return htmlString + '</ul>'
   };
 
   exports.NoteListView = NoteListView;

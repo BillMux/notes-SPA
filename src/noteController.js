@@ -1,4 +1,14 @@
-var list = new NoteList
-var noteList = new NoteListView(list.entries);
-document.getElementById('app').innerHTML = 'Howdy';
-document.getElementById('notes').innerHTML = noteList.returnList();
+(function(exports) {
+  function NoteController(noteList) {
+    var list = new NoteList;
+    this.noteList = new NoteListView(list);
+  };
+
+  NoteController.prototype.addNote = function(text) {
+    document.getElementById('app').innerHTML = text;
+    document.getElementById('notes').innerHTML = this.noteList.returnList();
+  };
+
+    exports.NoteController = NoteController;
+
+})(this);

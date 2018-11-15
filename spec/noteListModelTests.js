@@ -7,6 +7,6 @@ describe('notelist', function() {
   it('can add new notes', function() {
     var noteList = new NoteList();
     noteList.addNote('Hello');
-    new Expect(noteList.entries[0]).toEqual('Hello')
+    new Expect(noteList.entries).toHaveContent('Hello')
   });
 });

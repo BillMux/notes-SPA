@@ -17,4 +17,8 @@ describe("note list view", function(){
     new Expect(noteListView.returnList()).toEqual("<ul><li>My favourite language is JavaScript</li><li>Item 2</li></ul>")
   });
 
+  it('can accept a new note', function() {
+    
+  });
+
 });

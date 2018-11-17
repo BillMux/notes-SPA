@@ -4,7 +4,8 @@
   };
 
   NoteList.prototype.addNote = function(text) {
-    this.entries.push(text);
+    var note = new Note(text);
+    this.entries.push(note);
   };
 
   exports.NoteList = NoteList;

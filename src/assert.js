@@ -5,9 +5,9 @@
 
   Expect.prototype.toEqual = function(expectation) {
     if (this.subject !== expectation) {
-      throw new Error(`FAIL: "${this.subject}" does not equal "${expectation}"!`,);
+      throw new Error(`❌FAIL: "${this.subject}" does not equal "${expectation}"!`,);
     } else {
-      console.log(`%cHOORAY! "${this.subject}" is equal to "${expectation}", test passed!`, 'color: green');
+      console.log(`✅%cHOORAY! "${this.subject}" is equal to "${expectation}", test passed!`, 'color: green');
     };
   };
 

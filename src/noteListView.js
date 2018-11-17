@@ -4,11 +4,11 @@
   };
 
   NoteListView.prototype.returnList = function () {
-    var htmlString = '<ul>'
-    for(var i = 0; i < this.noteList.length; i++) {
-      htmlString += `<li>${this.noteList[i]}</li>`;
-    };
-    return htmlString + '</ul>'
+
+    htmlString = this.noteList.entries.map(
+      entry => `<li>${entry.getText()}</li>`
+    ).join('')
+    return `<ul>${htmlString}</ul>`;
   };
 
   exports.NoteListView = NoteListView;
